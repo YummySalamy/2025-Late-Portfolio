@@ -18,16 +18,13 @@ import {
   FaEye,
   FaHeart,
   FaStar,
-  FaCalendar,
   FaMapMarkerAlt,
-  FaNewspaper,
   FaLaptopCode,
   FaDatabase,
   FaCloud,
   FaMobile,
   FaRobot,
   FaBars,
-  FaGlobe,
   FaEnvelope,
   FaReact,
   FaNodeJs,
@@ -725,37 +722,37 @@ const testimonials: Testimonial[] = [
   },
 ]
 
-const articles: Article[] = [
-  {
-    id: "1",
-    title: "Building Scalable AI Applications with React and Python",
-    excerpt:
-      "A comprehensive guide on integrating machine learning models into modern web applications while maintaining performance and user experience.",
-    publishDate: "2024-01-15",
-    readTime: "8 min read",
-    url: "https://medium.com/@sebastianescobar/building-scalable-ai-apps",
-    category: "AI/ML",
-  },
-  {
-    id: "2",
-    title: "The Future of Full-Stack Development in Latin America",
-    excerpt: "Exploring emerging trends and opportunities for developers in the Latin American tech ecosystem.",
-    publishDate: "2023-12-10",
-    readTime: "6 min read",
-    url: "https://dev.to/sebastianescobar/future-fullstack-latam",
-    category: "Career",
-  },
-  {
-    id: "3",
-    title: "Implementing RAG Systems with LangChain",
-    excerpt:
-      "Deep dive into building retrieval-augmented generation systems for enhanced AI applications with practical examples.",
-    publishDate: "2023-11-22",
-    readTime: "12 min read",
-    url: "https://sebastianescobar.dev/rag-langchain",
-    category: "AI/ML",
-  },
-]
+// const articles: Article[] = [
+//   {
+//     id: "1",
+//     title: "Building Scalable AI Applications with React and Python",
+//     excerpt:
+//       "A comprehensive guide on integrating machine learning models into modern web applications while maintaining performance and user experience.",
+//     publishDate: "2024-01-15",
+//     readTime: "8 min read",
+//     url: "https://medium.com/@sebastianescobar/building-scalable-ai-apps",
+//     category: "AI/ML",
+//   },
+//   {
+//     id: "2",
+//     title: "The Future of Full-Stack Development in Latin America",
+//     excerpt: "Exploring emerging trends and opportunities for developers in the Latin American tech ecosystem.",
+//     publishDate: "2023-12-10",
+//     readTime: "6 min read",
+//     url: "https://dev.to/sebastianescobar/future-fullstack-latam",
+//     category: "Career",
+//   },
+//   {
+//     id: "3",
+//     title: "Implementing RAG Systems with LangChain",
+//     excerpt:
+//       "Deep dive into building retrieval-augmented generation systems for enhanced AI applications with practical examples.",
+//     publishDate: "2023-11-22",
+//     readTime: "12 min read",
+//     url: "https://sebastianescobar.dev/rag-langchain",
+//     category: "AI/ML",
+//   },
+// ]
 
 // ==================== MAIN COMPONENT ====================
 const App: React.FC = () => {
@@ -1033,7 +1030,7 @@ const App: React.FC = () => {
       <div className="relative min-h-screen">
         {/* Hero Section */}
         <section
-          ref={(el) => (sectionRefs.current["hero"] = el)}
+          ref={(el) => { sectionRefs.current["hero"] = el }}
           className="min-h-screen flex items-center justify-center px-4 py-20"
         >
           <div className="max-w-4xl mx-auto text-center animate-slide-in-up">
@@ -1117,7 +1114,7 @@ const App: React.FC = () => {
         </section>
 
         {/* About Section */}
-        <section ref={(el) => (sectionRefs.current["about"] = el)} className="py-16 md:py-20 px-4">
+        <section ref={(el) => { sectionRefs.current["about"] = el }} className="py-16 md:py-20 px-4">
           <div className="max-w-6xl mx-auto">
             <h2
               className={`text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 ${isDarkTheme ? "text-white" : "text-gray-800"}`}
@@ -1258,7 +1255,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Enhanced Skills Section */}
-        <section ref={(el) => (sectionRefs.current["skills"] = el)} className="py-16 md:py-20 px-4">
+        <section ref={(el) => {sectionRefs.current["skills"] = el}} className="py-16 md:py-20 px-4">
           <div className="max-w-7xl mx-auto">
             <h2
               className={`text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 ${isDarkTheme ? "text-white" : "text-gray-800"}`}
@@ -1513,7 +1510,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Projects Section */}
-        <section ref={(el) => (sectionRefs.current["projects"] = el)} className="py-16 md:py-20 px-4">
+        <section ref={(el) => {sectionRefs.current["projects"] = el}} className="py-16 md:py-20 px-4">
           <div className="max-w-7xl mx-auto">
             <h2
               className={`text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 ${isDarkTheme ? "text-white" : "text-gray-800"}`}
@@ -1661,7 +1658,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Experience Section */}
-        <section ref={(el) => (sectionRefs.current["experience"] = el)} className="py-16 md:py-20 px-4">
+        <section ref={(el) => {sectionRefs.current["experience"] = el}} className="py-16 md:py-20 px-4">
           <div className="max-w-4xl mx-auto">
             <h2
               className={`text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 ${isDarkTheme ? "text-white" : "text-gray-800"}`}
@@ -1842,7 +1839,7 @@ const App: React.FC = () => {
         </section> */}
 
         {/* Contact Section - Mail Feature is already building :) */}
-        <section ref={(el) => (sectionRefs.current["contact"] = el)} className="py-16 md:py-20 px-4">
+        <section ref={(el) => {sectionRefs.current["contact"] = el}} className="py-16 md:py-20 px-4">
           <div className="max-w-4xl mx-auto">
             <h2
               className={`text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 ${isDarkTheme ? "text-white" : "text-gray-800"}`}
