@@ -138,15 +138,15 @@ interface Testimonial {
   rating: number
 }
 
-interface Article {
-  id: string
-  title: string
-  excerpt: string
-  publishDate: string
-  readTime: string
-  url: string
-  category: string
-}
+// interface Article {
+//   id: string
+//   title: string
+//   excerpt: string
+//   publishDate: string
+//   readTime: string
+//   url: string
+//   category: string
+// }
 
 interface ContactForm {
   name: string
