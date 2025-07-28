@@ -1,0 +1,21 @@
+{
+    "name": "Sebastián Escobar Portfolio",
+    "short_name": "S. Escobar",
+    "description": "Full-Stack & AI Developer Portfolio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#14b8a6",
+    "icons": [
+        {
+        "src": "/portfolio-icon-2025.png",
+        "sizes": "192x192",
+        "type": "image/png"
+        },
+        {
+        "src": "/portfolio-icon-2025.png",
+        "sizes": "512x512",
+        "type": "image/png"
+        }
+    ]
+}
