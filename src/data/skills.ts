@@ -1,0 +1,258 @@
+import React from 'react'
+import {
+  FaCode,
+  FaBrain,
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaDocker,
+  FaAws,
+  FaDatabase,
+  FaMobile,
+  FaRobot,
+} from 'react-icons/fa'
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiGraphql,
+  SiExpress,
+  SiNestjs,
+  SiFastapi,
+  SiDjango,
+  SiTensorflow,
+  SiPytorch,
+  SiKubernetes,
+  SiPostgresql,
+  SiMongodb,
+  SiRedis,
+  SiJest,
+  SiJavascript,
+  SiFirebase,
+  SiGooglecloud,
+  SiCss3,
+} from 'react-icons/si'
+import type { Skill } from '../types'
+
+export const skills: Skill[] = [
+  {
+    name: "HTML",
+    level: "Expert",
+    category: "Frontend",
+    icon: React.createElement(FaCode),
+    description: "Semantic HTML5, accessibility best practices, and modern web standards",
+  },
+  {
+    name: "CSS",
+    level: "Expert",
+    category: "Frontend",
+    icon: React.createElement(SiCss3),
+    description: "Advanced CSS3, Flexbox, Grid, animations, and responsive design",
+  },
+  {
+    name: "JavaScript",
+    level: "Expert",
+    category: "Frontend",
+    icon: React.createElement(SiJavascript),
+    description: "ES6+, DOM manipulation, async programming, and modern JavaScript patterns",
+  },
+  {
+    name: "TypeScript",
+    level: "Expert",
+    category: "Frontend",
+    icon: React.createElement(SiTypescript),
+    description: "Type-safe development with advanced patterns, generics, and enterprise-level applications",
+  },
+  {
+    name: "React",
+    level: "Expert",
+    category: "Frontend",
+    icon: React.createElement(FaReact),
+    description: "Building modern, responsive web applications with hooks, context, and performance optimization",
+  },
+  {
+    name: "Next.js",
+    level: "Advanced",
+    category: "Frontend",
+    icon: React.createElement(SiNextdotjs),
+    description: "Full-stack React framework with SSR, SSG, API routes, and performance optimization",
+  },
+  {
+    name: "Tailwind CSS",
+    level: "Advanced",
+    category: "Frontend",
+    icon: React.createElement(SiTailwindcss),
+    description: "Utility-first CSS framework for rapid UI development and consistent design systems",
+  },
+  {
+    name: "GraphQL",
+    level: "Advanced",
+    category: "Backend",
+    icon: React.createElement(SiGraphql),
+    description: "API design, schema definition, resolvers, and efficient data fetching patterns with Apollo",
+  },
+  {
+    name: "Node.js",
+    level: "Expert",
+    category: "Backend",
+    icon: React.createElement(FaNodeJs),
+    description: "Server-side JavaScript with Express, microservices architecture, and real-time applications",
+  },
+  {
+    name: "NestJS",
+    level: "Advanced",
+    category: "Backend",
+    icon: React.createElement(SiNestjs),
+    description: "Enterprise-grade Node.js framework with TypeScript, decorators, and modular architecture",
+  },
+  {
+    name: "Express",
+    level: "Expert",
+    category: "Backend",
+    icon: React.createElement(SiExpress),
+    description: "Lightweight web framework for building RESTful APIs and web applications",
+  },
+  {
+    name: "Python",
+    level: "Expert",
+    category: "AI/ML",
+    icon: React.createElement(FaPython),
+    description: "Data science, machine learning, web development, and automation with various frameworks",
+  },
+  {
+    name: "FastAPI",
+    level: "Advanced",
+    category: "Backend",
+    icon: React.createElement(SiFastapi),
+    description: "Modern Python web framework for building high-performance APIs with automatic documentation",
+  },
+  {
+    name: "Django",
+    level: "Advanced",
+    category: "Backend",
+    icon: React.createElement(SiDjango),
+    description: "Full-featured Python web framework for rapid development and clean design",
+  },
+  {
+    name: "PyTorch",
+    level: "Advanced",
+    category: "AI/ML",
+    icon: React.createElement(SiPytorch),
+    description: "Research-oriented deep learning, custom architectures, and experimental model development",
+  },
+  {
+    name: "scikit-learn",
+    level: "Advanced",
+    category: "AI/ML",
+    icon: React.createElement(FaBrain),
+    description: "Classical machine learning algorithms, data preprocessing, and model evaluation",
+  },
+  {
+    name: "TensorFlow",
+    level: "Advanced",
+    category: "AI/ML",
+    icon: React.createElement(SiTensorflow),
+    description: "Deep learning models, neural networks, computer vision, and production ML pipelines",
+  },
+  {
+    name: "Keras",
+    level: "Advanced",
+    category: "AI/ML",
+    icon: React.createElement(FaBrain),
+    description: "High-level neural networks API for rapid prototyping and experimentation",
+  },
+  {
+    name: "LangChain",
+    level: "Advanced",
+    category: "AI/ML",
+    icon: React.createElement(FaRobot),
+    description: "Framework for developing applications with large language models and RAG systems",
+  },
+  {
+    name: "Docker",
+    level: "Advanced",
+    category: "DevOps",
+    icon: React.createElement(FaDocker),
+    description: "Containerization, multi-stage builds, Docker Compose, and container orchestration",
+  },
+  {
+    name: "Kubernetes",
+    level: "Intermediate",
+    category: "DevOps",
+    icon: React.createElement(SiKubernetes),
+    description: "Container orchestration, deployments, services, and scalable microservices architecture",
+  },
+  {
+    name: "AWS",
+    level: "Advanced",
+    category: "DevOps",
+    icon: React.createElement(FaAws),
+    description: "Cloud architecture, Lambda, S3, ECS, and serverless application deployment",
+  },
+  {
+    name: "Google Cloud",
+    level: "Advanced",
+    category: "DevOps",
+    icon: React.createElement(SiGooglecloud),
+    description: "Cloud Functions, Firestore, Vertex AI, and scalable cloud solutions",
+  },
+  {
+    name: "Firebase",
+    level: "Advanced",
+    category: "DevOps",
+    icon: React.createElement(SiFirebase),
+    description: "Real-time database, authentication, hosting, and rapid application development",
+  },
+  {
+    name: "PostgreSQL",
+    level: "Advanced",
+    category: "Backend",
+    icon: React.createElement(SiPostgresql),
+    description: "Advanced SQL, query optimization, indexing, and database design for high-performance apps",
+  },
+  {
+    name: "MySQL",
+    level: "Advanced",
+    category: "Backend",
+    icon: React.createElement(FaDatabase),
+    description: "Relational database management, optimization, and enterprise-level data solutions",
+  },
+  {
+    name: "MongoDB",
+    level: "Advanced",
+    category: "Backend",
+    icon: React.createElement(SiMongodb),
+    description: "NoSQL database design, aggregation pipelines, and scalable document-based applications",
+  },
+  {
+    name: "Redis",
+    level: "Advanced",
+    category: "Backend",
+    icon: React.createElement(SiRedis),
+    description: "In-memory data structure store for caching, session management, and real-time applications",
+  },
+  {
+    name: "Jest",
+    level: "Advanced",
+    category: "Frontend",
+    icon: React.createElement(SiJest),
+    description: "JavaScript testing framework with mocking, coverage reports, and test automation",
+  },
+  {
+    name: "React Native",
+    level: "Intermediate",
+    category: "Mobile",
+    icon: React.createElement(FaMobile),
+    description: "Cross-platform mobile development with native performance and platform-specific features",
+  }
+]
+
+export const getSkillsByCategory = () => {
+  return skills.reduce((acc, skill) => {
+    if (!acc[skill.category]) {
+      acc[skill.category] = []
+    }
+    acc[skill.category].push(skill)
+    return acc
+  }, {} as Record<string, Skill[]>)
+}
