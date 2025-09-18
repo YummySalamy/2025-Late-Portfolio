@@ -7,6 +7,7 @@ interface CardProps {
   rounded?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl'
   shadow?: boolean
   className?: string
+  style?: React.CSSProperties;
   children: React.ReactNode
   onClick?: () => void
 }

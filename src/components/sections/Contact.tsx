@@ -31,7 +31,7 @@ export const Contact = memo<ContactProps>(({ isDarkTheme }) => {
 
   const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    const errors = validateForm(contactForm)
+    const errors = validateForm(contactForm as unknown as { [key: string]: string })
     setFormErrors(errors)
     
     if (Object.keys(errors).length > 0) return
