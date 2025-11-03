@@ -2,6 +2,7 @@ import type { Project } from '../types'
 import AuroraMock from '../assets/mockups/Aurora.png'
 import DatapathELearningMock from '../assets/mockups/datapath-e-learning-mockup2.png'
 import DatapathLandingMock from '../assets/mockups/datapath-landing-mockup.jpeg'
+import VentouryLandingMock from '../assets/mockups/ventoury-landing-page-mockup.png'
 import EclipseMock from '../assets/mockups/eclipse-mockup.png'
 import FreshPlaceMock from '../assets/mockups/fresh-place.png'
 import ImageClassifierMock from '../assets/mockups/image-classifier.png'
@@ -11,7 +12,7 @@ import RetroModernMock from '../assets/mockups/retromodern-marketplace-mockup.pn
 import SiriusAppMock from '../assets/mockups/sirius-mockup.png'
 import SiriusLandingMock from '../assets/mockups/sirius-landing-page-mockup2.png'
 import PrevPortfolioMock from '../assets/mockups/web2-mockup.png'
-
+// import VentouryDashboardMock from '../assets/mockups/ventoury-dashboard-mockup.png'
 export const projects: Project[] = [
   {
     id: "1",
@@ -45,6 +46,21 @@ export const projects: Project[] = [
   },
   {
     id: "3",
+    title: "Ventoury",
+    description: "An Inventory and Sales Management System for small and medium businesses.",
+    longDescription:
+      "A comprehensive inventory and sales management system designed for small and medium businesses. Features include real-time inventory tracking, sales analytics, customer management, website creation, and an intuitive dashboard for business insights.",
+    technologies: ["React", "Next.js", "Supabase", "Tailwind CSS", "Claude AI", "OpenAI", "PostgreSQL"],
+    image: VentouryLandingMock,
+    demoUrl: "https://ventoury.vercel.app/",
+    githubUrl: "",
+    featured: true,
+    category: "Web",
+    status: "In Progress",
+    year: 2025,
+  },
+  {
+    id: "4",
     title: "SIRIUS",
     description: "A multi-platform application for physics studies and simulations.",
     longDescription:
@@ -59,7 +75,7 @@ export const projects: Project[] = [
     year: 2023,
   },
   {
-    id: "4",
+    id: "5",
     title: "AI Image Classifier",
     description: "A Python application that uses machine learning to classify images.",
     longDescription:
@@ -74,7 +90,7 @@ export const projects: Project[] = [
     year: 2023,
   },
   {
-    id: "5",
+    id: "6",
     title: "nubot.io",
     description: "A web application that allows users to auto-manage their companies with AI.",
     longDescription:
@@ -89,7 +105,7 @@ export const projects: Project[] = [
     year: 2024,
   },
   {
-    id: "6",
+    id: "7",
     title: "SIRIUS Landing Page",
     description: "The official landing page for the SIRIUS project.",
     longDescription:
@@ -104,7 +120,7 @@ export const projects: Project[] = [
     year: 2023,
   },
   {
-    id: "7",
+    id: "8",
     title: "2024 - Late Portfolio",
     description: "My personal portfolio showcasing my skills and projects.",
     longDescription:
@@ -119,7 +135,7 @@ export const projects: Project[] = [
     year: 2024,
   },
   {
-    id: "8",
+    id: "9",
     title: "RetroModern Marketplace",
     description: "A web application that allows users to buy and sell retro and modern items.",
     longDescription:
@@ -134,7 +150,7 @@ export const projects: Project[] = [
     year: 2023,
   },
   {
-    id: "9",
+    id: "10",
     title: "Datapath E-Learning",
     description: "A web application that showcases various tech courses with advanced features.",
     longDescription:
@@ -149,7 +165,7 @@ export const projects: Project[] = [
     year: 2023,
   },
   {
-    id: "10",
+    id: "11",
     title: "Jewelry Shop Landing",
     description: "A minimalistic landing page for a jewelry shop.",
     longDescription:
@@ -164,7 +180,7 @@ export const projects: Project[] = [
     year: 2023,
   },
   {
-    id: "11",
+    id: "12",
     title: "Aurora",
     description: "An innovative web application with advanced insights and analytics.",
     longDescription:
@@ -179,7 +195,7 @@ export const projects: Project[] = [
     year: 2024,
   },
   {
-    id: "12",
+    id: "13",
     title: "Eclipse",
     description: "A web application designed to be an all-in-one platform administrator.",
     longDescription:
