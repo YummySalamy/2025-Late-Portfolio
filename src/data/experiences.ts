@@ -2,10 +2,25 @@ import type { Experience } from '../types'
 
 export const experiences: Experience[] = [
   {
+    id: "0",
+    company: "TICIO",
+    position: "Backend Engineer & AI Developer",
+    duration: "October 2025 - Present",
+    location: "Remote",
+    description: [
+      "Design and implement scalable backend systems for AI-driven applications",
+      "Develop RESTful APIs and microservices to support AI functionalities",
+      "Integrate machine learning models into production environments",
+      "Optimize database performance and ensure data integrity for AI datasets",
+    ],
+    technologies: ["Python", "FastAPI", "Docker", "PostgreSQL", "Gemini AI" ],
+    current: true,
+  },
+  {
     id: "1",
     company: "Outlier (Scale AI)",
     position: "LATAM Coders Member, Coding Expertise & AI Trainer",
-    duration: "November 2024 - Present",
+    duration: "November 2024 - October 2025",
     location: "Remote",
     description: [
       "Craft high-precision datasets for training large language models with focus on LATAM coding expertise",
@@ -14,7 +29,7 @@ export const experiences: Experience[] = [
       "Collaborate with international teams to improve model performance and accuracy in Spanish and English",
     ],
     technologies: ["Python", "LangChain", "RLHF", "Machine Learning", "Data Science"],
-    current: true,
+    current: false,
   },
   {
     id: "2",
