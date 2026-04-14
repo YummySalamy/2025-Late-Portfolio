@@ -1,5 +1,5 @@
 import type { PersonalInfo } from '../types'
-import AvatarPic from '../assets/images/sebastian_escobar_horse_pic.png'
+import AvatarPic from '../assets/images/sebastian_escobar.jpg'
 import CVFile from '../assets/MyCV.pdf'
 
 export const personalInfo: PersonalInfo = {

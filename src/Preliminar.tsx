@@ -57,7 +57,7 @@ import {
   SiGooglecloud,
   SiCss3,
 } from "react-icons/si"
-import AvatarPic from "./assets/images/sebastian_escobar_horse_pic.png"
+import AvatarPic from "./assets/images/sebastian_escobar.jpg"
 import CVFile from "./assets/MyCV.pdf"
 // ==================== MOCKUPS ====================
 import AuroraMock from "./assets/mockups/Aurora.png"
@@ -923,11 +923,10 @@ const App: React.FC = () => {
       {/* Background */}
       <div className="fixed inset-0 -z-10 transition-all duration-500">
         <div
-          className={`absolute inset-0 ${
-            isDarkTheme
+          className={`absolute inset-0 ${isDarkTheme
               ? "bg-gradient-to-br from-gray-900 via-teal-900 to-gray-800"
               : "bg-gradient-to-br from-teal-50 via-amber-50 to-white"
-          }`}
+            }`}
         />
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-72 h-72 md:w-96 md:h-96 bg-teal-500 rounded-full filter blur-3xl opacity-40 animate-float" />
@@ -956,15 +955,14 @@ const App: React.FC = () => {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`nav-item px-3 py-1 rounded-full text-sm font-medium transition-all cursor-pointer ${
-                activeSection === item.id
+              className={`nav-item px-3 py-1 rounded-full text-sm font-medium transition-all cursor-pointer ${activeSection === item.id
                   ? isDarkTheme
                     ? "bg-teal-500 text-white"
                     : "bg-teal-600 text-white"
                   : isDarkTheme
                     ? "text-gray-300 hover:text-white hover:bg-white/10"
                     : "text-gray-600 hover:text-gray-800 hover:bg-black/10"
-              }`}
+                }`}
             >
               {item.label}
             </button>
@@ -995,15 +993,14 @@ const App: React.FC = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-left px-4 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer ${
-                    activeSection === item.id
+                  className={`text-left px-4 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer ${activeSection === item.id
                       ? isDarkTheme
                         ? "bg-teal-500 text-white"
                         : "bg-teal-600 text-white"
                       : isDarkTheme
                         ? "text-gray-300 hover:text-white hover:bg-white/10"
                         : "text-gray-600 hover:text-gray-800 hover:bg-black/10"
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
@@ -1047,23 +1044,20 @@ const App: React.FC = () => {
                 </div>
               </div>
               <h1
-                className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 transition-colors ${
-                  isDarkTheme ? "text-white" : "text-gray-800"
-                }`}
+                className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 transition-colors ${isDarkTheme ? "text-white" : "text-gray-800"
+                  }`}
               >
                 {personalInfo.name}
               </h1>
               <p
-                className={`text-lg sm:text-xl md:text-2xl mb-4 md:mb-6 transition-colors ${
-                  isDarkTheme ? "text-teal-300" : "text-teal-600"
-                }`}
+                className={`text-lg sm:text-xl md:text-2xl mb-4 md:mb-6 transition-colors ${isDarkTheme ? "text-teal-300" : "text-teal-600"
+                  }`}
               >
                 {personalInfo.title}
               </p>
               <div
-                className={`flex items-center justify-center gap-2 mb-6 md:mb-8 text-sm md:text-lg ${
-                  isDarkTheme ? "text-gray-300" : "text-gray-600"
-                }`}
+                className={`flex items-center justify-center gap-2 mb-6 md:mb-8 text-sm md:text-lg ${isDarkTheme ? "text-gray-300" : "text-gray-600"
+                  }`}
               >
                 <FaMapMarkerAlt />
                 <span>{personalInfo.location}</span>
@@ -1078,9 +1072,8 @@ const App: React.FC = () => {
                 </button>
                 <button
                   onClick={() => scrollToSection("contact")}
-                  className={`button-hover flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 glassmorphism rounded-full font-semibold text-sm md:text-base cursor-pointer ${
-                    isDarkTheme ? "text-white" : "text-gray-800"
-                  }`}
+                  className={`button-hover flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 glassmorphism rounded-full font-semibold text-sm md:text-base cursor-pointer ${isDarkTheme ? "text-white" : "text-gray-800"
+                    }`}
                 >
                   <FaEnvelope className="w-4 h-4" />
                   Get In Touch
@@ -1097,9 +1090,8 @@ const App: React.FC = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`social-icon p-3 md:p-4 glassmorphism rounded-full cursor-pointer ${
-                      isDarkTheme ? "hover:bg-white/10 text-white" : "hover:bg-black/10 text-gray-700"
-                    }`}
+                    className={`social-icon p-3 md:p-4 glassmorphism rounded-full cursor-pointer ${isDarkTheme ? "hover:bg-white/10 text-white" : "hover:bg-black/10 text-gray-700"
+                      }`}
                     aria-label={social.name}
                   >
                     <social.icon className="w-5 h-5 md:w-6 md:h-6" />
@@ -1174,9 +1166,8 @@ const App: React.FC = () => {
               <div className="space-y-6 animate-slide-in-right">
                 <div className="glassmorphism rounded-2xl p-4 md:p-6">
                   <h3
-                    className={`text-lg md:text-xl font-semibold mb-4 flex items-center gap-2 ${
-                      isDarkTheme ? "text-white" : "text-gray-800"
-                    }`}
+                    className={`text-lg md:text-xl font-semibold mb-4 flex items-center gap-2 ${isDarkTheme ? "text-white" : "text-gray-800"
+                      }`}
                   >
                     <FaGraduationCap className="text-teal-500" />
                     Education
@@ -1200,9 +1191,8 @@ const App: React.FC = () => {
                             {edu.honors.map((honor, index) => (
                               <span
                                 key={index}
-                                className={`px-2 py-1 text-xs rounded-full ${
-                                  isDarkTheme ? "bg-gray-700 text-gray-300" : "bg-gray-200 text-gray-700"
-                                }`}
+                                className={`px-2 py-1 text-xs rounded-full ${isDarkTheme ? "bg-gray-700 text-gray-300" : "bg-gray-200 text-gray-700"
+                                  }`}
                               >
                                 {honor}
                               </span>
@@ -1215,9 +1205,8 @@ const App: React.FC = () => {
                 </div>
                 <div className="glassmorphism rounded-2xl p-4 md:p-6">
                   <h3
-                    className={`text-lg md:text-xl font-semibold mb-4 flex items-center gap-2 ${
-                      isDarkTheme ? "text-white" : "text-gray-800"
-                    }`}
+                    className={`text-lg md:text-xl font-semibold mb-4 flex items-center gap-2 ${isDarkTheme ? "text-white" : "text-gray-800"
+                      }`}
                   >
                     <FaCertificate className="text-amber-500" />
                     Certifications
@@ -1255,7 +1244,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Enhanced Skills Section */}
-        <section ref={(el) => {sectionRefs.current["skills"] = el}} className="py-16 md:py-20 px-4">
+        <section ref={(el) => { sectionRefs.current["skills"] = el }} className="py-16 md:py-20 px-4">
           <div className="max-w-7xl mx-auto">
             <h2
               className={`text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 ${isDarkTheme ? "text-white" : "text-gray-800"}`}
@@ -1285,8 +1274,7 @@ const App: React.FC = () => {
                           <div className="text-center mb-6 md:mb-8">
                             <div className="flex justify-center mb-4">
                               <div
-                                className={`p-4 rounded-full ${
-                                  category === "Frontend"
+                                className={`p-4 rounded-full ${category === "Frontend"
                                     ? "bg-blue-500/20"
                                     : category === "Backend"
                                       ? "bg-green-500/20"
@@ -1295,7 +1283,7 @@ const App: React.FC = () => {
                                         : category === "DevOps"
                                           ? "bg-orange-500/20"
                                           : "bg-pink-500/20"
-                                }`}
+                                  }`}
                               >
                                 {category === "Frontend" && (
                                   <FaLaptopCode className="text-blue-500 w-8 h-8 md:w-10 md:h-10" />
@@ -1320,8 +1308,7 @@ const App: React.FC = () => {
                               {category}
                             </h3>
                             <div
-                              className={`w-16 h-1 mx-auto rounded-full ${
-                                category === "Frontend"
+                              className={`w-16 h-1 mx-auto rounded-full ${category === "Frontend"
                                   ? "bg-blue-500"
                                   : category === "Backend"
                                     ? "bg-green-500"
@@ -1330,7 +1317,7 @@ const App: React.FC = () => {
                                       : category === "DevOps"
                                         ? "bg-orange-500"
                                         : "bg-pink-500"
-                              }`}
+                                }`}
                             />
                           </div>
                           <div className="space-y-4">
@@ -1343,9 +1330,8 @@ const App: React.FC = () => {
                                 <div className="flex justify-between items-center mb-3">
                                   <div className="flex items-center gap-3">
                                     <div
-                                      className={`skill-icon text-lg transition-all duration-300 group-hover:scale-110 group-hover:text-teal-500 ${
-                                        isDarkTheme ? "text-gray-300" : "text-gray-700"
-                                      }`}
+                                      className={`skill-icon text-lg transition-all duration-300 group-hover:scale-110 group-hover:text-teal-500 ${isDarkTheme ? "text-gray-300" : "text-gray-700"
+                                        }`}
                                     >
                                       {skill.icon}
                                     </div>
@@ -1356,38 +1342,35 @@ const App: React.FC = () => {
                                     </span>
                                   </div>
                                   <span
-                                    className={`text-xs px-2 py-1 rounded-full font-medium transition-all duration-300 ${
-                                      skill.level === "Expert"
+                                    className={`text-xs px-2 py-1 rounded-full font-medium transition-all duration-300 ${skill.level === "Expert"
                                         ? "bg-green-500 text-white group-hover:bg-green-400"
                                         : skill.level === "Advanced"
                                           ? "bg-blue-500 text-white group-hover:bg-blue-400"
                                           : skill.level === "Intermediate"
                                             ? "bg-yellow-500 text-white group-hover:bg-yellow-400"
                                             : "bg-gray-500 text-white group-hover:bg-gray-400"
-                                    }`}
+                                      }`}
                                   >
                                     {skill.level}
                                   </span>
                                 </div>
                                 <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-3 overflow-hidden">
                                   <div
-                                    className={`skill-level-bar h-2 rounded-full transition-all duration-1000 group-hover:shadow-lg ${
-                                      skill.level === "Expert"
+                                    className={`skill-level-bar h-2 rounded-full transition-all duration-1000 group-hover:shadow-lg ${skill.level === "Expert"
                                         ? "bg-gradient-to-r from-green-400 to-green-600 skill-level-expert"
                                         : skill.level === "Advanced"
                                           ? "bg-gradient-to-r from-blue-400 to-blue-600 skill-level-advanced"
                                           : skill.level === "Intermediate"
                                             ? "bg-gradient-to-r from-yellow-400 to-yellow-600 skill-level-intermediate"
                                             : "bg-gradient-to-r from-gray-400 to-gray-600 skill-level-beginner"
-                                    }`}
+                                      }`}
                                   />
                                 </div>
                                 <div
-                                  className={`text-xs md:text-sm leading-relaxed transition-all duration-300 ${
-                                    isDarkTheme
+                                  className={`text-xs md:text-sm leading-relaxed transition-all duration-300 ${isDarkTheme
                                       ? "text-gray-300 group-hover:text-gray-200"
                                       : "text-gray-600 group-hover:text-gray-700"
-                                  }`}
+                                    }`}
                                 >
                                   {skill.description}
                                 </div>
@@ -1398,11 +1381,10 @@ const App: React.FC = () => {
                             <div className="mt-6 pt-6 border-t border-white/10 text-center">
                               <button
                                 onClick={() => toggleSkillCategory(category)}
-                                className={`flex items-center justify-center gap-2 mx-auto px-4 py-2 rounded-lg transition-all cursor-pointer ${
-                                  isDarkTheme
+                                className={`flex items-center justify-center gap-2 mx-auto px-4 py-2 rounded-lg transition-all cursor-pointer ${isDarkTheme
                                     ? "text-gray-400 hover:text-white hover:bg-white/10"
                                     : "text-gray-500 hover:text-gray-800 hover:bg-black/10"
-                                }`}
+                                  }`}
                               >
                                 {isExpanded ? (
                                   <>
@@ -1427,15 +1409,14 @@ const App: React.FC = () => {
                                 {categorySkills.map((skill, index) => (
                                   <div
                                     key={index}
-                                    className={`w-2 h-2 rounded-full ${
-                                      skill.level === "Expert"
+                                    className={`w-2 h-2 rounded-full ${skill.level === "Expert"
                                         ? "bg-green-500"
                                         : skill.level === "Advanced"
                                           ? "bg-blue-500"
                                           : skill.level === "Intermediate"
                                             ? "bg-yellow-500"
                                             : "bg-gray-500"
-                                    }`}
+                                      }`}
                                   />
                                 ))}
                               </div>
@@ -1478,8 +1459,7 @@ const App: React.FC = () => {
                     return (
                       <div key={category} className="text-center">
                         <div
-                          className={`text-2xl md:text-3xl font-bold mb-1 ${
-                            category === "Frontend"
+                          className={`text-2xl md:text-3xl font-bold mb-1 ${category === "Frontend"
                               ? "text-blue-500"
                               : category === "Backend"
                                 ? "text-green-500"
@@ -1488,7 +1468,7 @@ const App: React.FC = () => {
                                   : category === "DevOps"
                                     ? "text-orange-500"
                                     : "text-pink-500"
-                          }`}
+                            }`}
                         >
                           {categorySkills.length}
                         </div>
@@ -1510,7 +1490,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Projects Section */}
-        <section ref={(el) => {sectionRefs.current["projects"] = el}} className="py-16 md:py-20 px-4">
+        <section ref={(el) => { sectionRefs.current["projects"] = el }} className="py-16 md:py-20 px-4">
           <div className="max-w-7xl mx-auto">
             <h2
               className={`text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 ${isDarkTheme ? "text-white" : "text-gray-800"}`}
@@ -1529,13 +1509,12 @@ const App: React.FC = () => {
                     <button
                       key={category}
                       onClick={() => setSelectedCategory(category)}
-                      className={`button-hover px-4 md:px-6 py-2 rounded-full font-medium transition-all text-sm md:text-base whitespace-nowrap cursor-pointer ${
-                        selectedCategory === category
+                      className={`button-hover px-4 md:px-6 py-2 rounded-full font-medium transition-all text-sm md:text-base whitespace-nowrap cursor-pointer ${selectedCategory === category
                           ? "bg-teal-500 text-white"
                           : isDarkTheme
                             ? "text-gray-300 hover:text-white hover:bg-white/10"
                             : "text-gray-600 hover:text-gray-800 hover:bg-black/10"
-                      }`}
+                        }`}
                     >
                       {category}
                     </button>
@@ -1558,13 +1537,12 @@ const App: React.FC = () => {
                     />
                     <div className="absolute top-3 md:top-4 left-3 md:left-4">
                       <span
-                        className={`px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium ${
-                          project.status === "Completed"
+                        className={`px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium ${project.status === "Completed"
                             ? "bg-green-500 text-white"
                             : project.status === "In Progress"
                               ? "bg-blue-500 text-white"
                               : "bg-gray-500 text-white"
-                        }`}
+                          }`}
                       >
                         {project.status}
                       </span>
@@ -1594,9 +1572,8 @@ const App: React.FC = () => {
                       {project.technologies.slice(0, 3).map((tech) => (
                         <span
                           key={tech}
-                          className={`px-2 py-1 text-xs rounded-full ${
-                            isDarkTheme ? "bg-gray-700 text-gray-300" : "bg-gray-200 text-gray-700"
-                          }`}
+                          className={`px-2 py-1 text-xs rounded-full ${isDarkTheme ? "bg-gray-700 text-gray-300" : "bg-gray-200 text-gray-700"
+                            }`}
                         >
                           {tech}
                         </span>
@@ -1604,11 +1581,10 @@ const App: React.FC = () => {
                       {project.technologies.length > 3 && (
                         <button
                           onClick={() => setExpandedTechs(expandedTechs === project.id ? null : project.id)}
-                          className={`px-2 py-1 text-xs rounded-full cursor-pointer transition-all ${
-                            isDarkTheme
+                          className={`px-2 py-1 text-xs rounded-full cursor-pointer transition-all ${isDarkTheme
                               ? "bg-gray-700 text-gray-300 hover:bg-gray-600"
                               : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                          }`}
+                            }`}
                         >
                           +{project.technologies.length - 3}
                         </button>
@@ -1619,9 +1595,8 @@ const App: React.FC = () => {
                         {project.technologies.slice(3).map((tech) => (
                           <span
                             key={tech}
-                            className={`px-2 py-1 text-xs rounded-full ${
-                              isDarkTheme ? "bg-gray-700 text-gray-300" : "bg-gray-200 text-gray-700"
-                            }`}
+                            className={`px-2 py-1 text-xs rounded-full ${isDarkTheme ? "bg-gray-700 text-gray-300" : "bg-gray-200 text-gray-700"
+                              }`}
                           >
                             {tech}
                           </span>
@@ -1642,9 +1617,8 @@ const App: React.FC = () => {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`button-hover flex items-center gap-2 px-3 md:px-4 py-2 glassmorphism rounded-lg text-sm font-medium flex-1 justify-center cursor-pointer ${
-                          isDarkTheme ? "text-white hover:bg-white/10" : "text-gray-800 hover:bg-black/10"
-                        }`}
+                        className={`button-hover flex items-center gap-2 px-3 md:px-4 py-2 glassmorphism rounded-lg text-sm font-medium flex-1 justify-center cursor-pointer ${isDarkTheme ? "text-white hover:bg-white/10" : "text-gray-800 hover:bg-black/10"
+                          }`}
                       >
                         <FaCode className="w-3 h-3 md:w-4 md:h-4" />
                         Code
@@ -1658,7 +1632,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Experience Section */}
-        <section ref={(el) => {sectionRefs.current["experience"] = el}} className="py-16 md:py-20 px-4">
+        <section ref={(el) => { sectionRefs.current["experience"] = el }} className="py-16 md:py-20 px-4">
           <div className="max-w-4xl mx-auto">
             <h2
               className={`text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 ${isDarkTheme ? "text-white" : "text-gray-800"}`}
@@ -1715,9 +1689,8 @@ const App: React.FC = () => {
                         {exp.technologies.map((tech) => (
                           <span
                             key={tech}
-                            className={`px-2 md:px-3 py-1 text-xs md:text-sm rounded-full ${
-                              isDarkTheme ? "bg-gray-700 text-gray-300" : "bg-gray-200 text-gray-700"
-                            }`}
+                            className={`px-2 md:px-3 py-1 text-xs md:text-sm rounded-full ${isDarkTheme ? "bg-gray-700 text-gray-300" : "bg-gray-200 text-gray-700"
+                              }`}
                           >
                             {tech}
                           </span>
@@ -1839,7 +1812,7 @@ const App: React.FC = () => {
         </section> */}
 
         {/* Contact Section - Mail Feature is already building :) */}
-        <section ref={(el) => {sectionRefs.current["contact"] = el}} className="py-16 md:py-20 px-4">
+        <section ref={(el) => { sectionRefs.current["contact"] = el }} className="py-16 md:py-20 px-4">
           <div className="max-w-4xl mx-auto">
             <h2
               className={`text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 ${isDarkTheme ? "text-white" : "text-gray-800"}`}
@@ -1905,9 +1878,8 @@ const App: React.FC = () => {
                         href={social.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`social-icon p-2 md:p-3 glassmorphism rounded-full cursor-pointer ${
-                          isDarkTheme ? "hover:bg-white/10 text-white" : "hover:bg-black/10 text-gray-700"
-                        }`}
+                        className={`social-icon p-2 md:p-3 glassmorphism rounded-full cursor-pointer ${isDarkTheme ? "hover:bg-white/10 text-white" : "hover:bg-black/10 text-gray-700"
+                          }`}
                         aria-label={social.name}
                       >
                         <social.icon className="w-4 h-4 md:w-5 md:h-5" />
@@ -1930,13 +1902,12 @@ const App: React.FC = () => {
                       id="name"
                       value={contactForm.name}
                       onChange={(e) => setContactForm((prev) => ({ ...prev, name: e.target.value }))}
-                      className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-lg glassmorphism border transition-all focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm md:text-base ${
-                        formErrors.name
+                      className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-lg glassmorphism border transition-all focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm md:text-base ${formErrors.name
                           ? "border-red-500"
                           : isDarkTheme
                             ? "border-gray-600 text-white placeholder-gray-400"
                             : "border-gray-300 text-gray-800 placeholder-gray-500"
-                      }`}
+                        }`}
                       placeholder="Your full name"
                     />
                     {formErrors.name && (
@@ -1958,13 +1929,12 @@ const App: React.FC = () => {
                       id="email"
                       value={contactForm.email}
                       onChange={(e) => setContactForm((prev) => ({ ...prev, email: e.target.value }))}
-                      className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-lg glassmorphism border transition-all focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm md:text-base ${
-                        formErrors.email
+                      className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-lg glassmorphism border transition-all focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm md:text-base ${formErrors.email
                           ? "border-red-500"
                           : isDarkTheme
                             ? "border-gray-600 text-white placeholder-gray-400"
                             : "border-gray-300 text-gray-800 placeholder-gray-500"
-                      }`}
+                        }`}
                       placeholder="your.email@example.com"
                     />
                     {formErrors.email && (
@@ -1986,13 +1956,12 @@ const App: React.FC = () => {
                       id="subject"
                       value={contactForm.subject}
                       onChange={(e) => setContactForm((prev) => ({ ...prev, subject: e.target.value }))}
-                      className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-lg glassmorphism border transition-all focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm md:text-base ${
-                        formErrors.subject
+                      className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-lg glassmorphism border transition-all focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm md:text-base ${formErrors.subject
                           ? "border-red-500"
                           : isDarkTheme
                             ? "border-gray-600 text-white placeholder-gray-400"
                             : "border-gray-300 text-gray-800 placeholder-gray-500"
-                      }`}
+                        }`}
                       placeholder="Project discussion, collaboration, etc."
                     />
                     {formErrors.subject && (
@@ -2014,13 +1983,12 @@ const App: React.FC = () => {
                       rows={4}
                       value={contactForm.message}
                       onChange={(e) => setContactForm((prev) => ({ ...prev, message: e.target.value }))}
-                      className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-lg glassmorphism border transition-all focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none text-sm md:text-base ${
-                        formErrors.message
+                      className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-lg glassmorphism border transition-all focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none text-sm md:text-base ${formErrors.message
                           ? "border-red-500"
                           : isDarkTheme
                             ? "border-gray-600 text-white placeholder-gray-400"
                             : "border-gray-300 text-gray-800 placeholder-gray-500"
-                      }`}
+                        }`}
                       placeholder="Tell me about your project, ideas, or how we can work together..."
                     />
                     {formErrors.message && (
@@ -2088,11 +2056,10 @@ const App: React.FC = () => {
                   value={newsletterEmail}
                   onChange={(e) => setNewsletterEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className={`flex-1 px-3 md:px-4 py-2 md:py-3 rounded-lg glassmorphism border transition-all focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm md:text-base ${
-                    isDarkTheme
+                  className={`flex-1 px-3 md:px-4 py-2 md:py-3 rounded-lg glassmorphism border transition-all focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm md:text-base ${isDarkTheme
                       ? "border-gray-600 text-white placeholder-gray-400"
                       : "border-gray-300 text-gray-800 placeholder-gray-500"
-                  }`}
+                    }`}
                 />
                 <button
                   type="submit"
@@ -2138,9 +2105,8 @@ const App: React.FC = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`social-icon p-2 glassmorphism rounded-full cursor-pointer ${
-                        isDarkTheme ? "hover:bg-white/10 text-white" : "hover:bg-black/10 text-gray-700"
-                      }`}
+                      className={`social-icon p-2 glassmorphism rounded-full cursor-pointer ${isDarkTheme ? "hover:bg-white/10 text-white" : "hover:bg-black/10 text-gray-700"
+                        }`}
                       aria-label={social.name}
                     >
                       <social.icon className="w-4 h-4 md:w-5 md:h-5" />
@@ -2164,9 +2130,8 @@ const App: React.FC = () => {
                     <li key={link.id}>
                       <button
                         onClick={() => scrollToSection(link.id)}
-                        className={`transition-colors hover:text-teal-500 text-sm md:text-base cursor-pointer ${
-                          isDarkTheme ? "text-gray-300" : "text-gray-600"
-                        }`}
+                        className={`transition-colors hover:text-teal-500 text-sm md:text-base cursor-pointer ${isDarkTheme ? "text-gray-300" : "text-gray-600"
+                          }`}
                       >
                         {link.label}
                       </button>
